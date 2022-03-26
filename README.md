@@ -6,7 +6,7 @@ App will send requests to the given list of URLs.
 Main logic can be found in ```internal/app/service/service.go```. ```Limiter``` chanel is used for limiting amount of parallel
 requests, waitGroup allows waiting for all goroutines to be finished, ```responses``` channel is used for storing results
 and fetching them later.
-File```internal/app/infrastructure/client.go``` is used for simple http client implementation. Main method there returns
+File```internal/app/infrastructure/client.go``` is used as simple http client implementation. Main method there returns
 response body as a slice of bytes.
 
 ### How to run
